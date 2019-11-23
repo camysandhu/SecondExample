@@ -35,4 +35,30 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/editPersonName" />
+
+    <ToggleButton
+        android:id="@+id/toggleStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:text="ToggleButton"
+        android:textOff="RED"
+        android:textOn="BLUE"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/txtColor"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="104dp"
+        android:text="Change My Color"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/toggleStatus"
+        app:layout_constraintTop_toTopOf="@+id/buttonLogin" />
 </androidx.constraintlayout.widget.ConstraintLayout>
