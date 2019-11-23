@@ -61,4 +61,29 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/toggleStatus"
         app:layout_constraintTop_toTopOf="@+id/buttonLogin" />
+
+    <Switch
+        android:id="@+id/switchRem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="80dp"
+        android:text="Remember Me?"
+        app:layout_constraintEnd_toStartOf="@+id/txtRem"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/toggleStatus" />
+
+    <TextView
+        android:id="@+id/txtRem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="86dp"
+        android:text="text"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/switchRem"
+        app:layout_constraintTop_toTopOf="@+id/txtColor" />
 </androidx.constraintlayout.widget.ConstraintLayout>

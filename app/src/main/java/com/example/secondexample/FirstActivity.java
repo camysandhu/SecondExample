@@ -11,6 +11,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.EditText;
+import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.ToggleButton;
 
@@ -21,6 +22,10 @@ public class FirstActivity extends AppCompatActivity implements View.OnClickList
     private Button btnGoNxt;
     private ToggleButton toggleButton;
     private TextView txtChange;
+    private Switch switchChange;
+    private TextView txtChange2;
+
+
 
 
 
@@ -34,6 +39,27 @@ public class FirstActivity extends AppCompatActivity implements View.OnClickList
         btnGoNxt = findViewById(R.id.buttonLogin);
         toggleButton = findViewById(R.id.toggleStatus);
         txtChange = findViewById(R.id.txtColor);
+        switchChange = findViewById(R.id.switchRem);
+        txtChange2 = findViewById(R.id.txtRem);
+
+        switchChange.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                if(b)   //toggleButton.isChecked() or compundButton.isChecked()
+                {
+                    txtChange2.setBackgroundColor(Color.YELLOW);
+                    txtChange2.setTextColor(Color.BLUE);
+                    txtChange2.setText("Yes");
+                }
+                else
+                {
+                    txtChange2.setBackgroundColor(Color.BLACK);
+                    txtChange2.setTextColor(Color.RED);
+                    txtChange2.setText("No");
+                }
+
+            }
+        });
         //txtChange.setBackgroundColor(Color.YELLOW);
 
 
